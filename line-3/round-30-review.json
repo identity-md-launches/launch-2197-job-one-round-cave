@@ -1,0 +1,66 @@
+{
+  "wall": {
+    "path": "artifacts/line-3/wall-v10.png",
+    "current_alias": "artifacts/line-3/wall.png",
+    "format": "PNG",
+    "color": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 2912257,
+    "sha256": "7cb35989ee12a4deccf213d036d8055808c78eeaf38145bbe0263ddde1190772"
+  },
+  "preview": {
+    "path": "dist/line-3/30.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 67092
+  },
+  "preservation": {
+    "ancestor": "artifacts/line-3/wall-v9.png",
+    "patch_bounds_exclusive": [
+      968,
+      352,
+      1041,
+      398
+    ],
+    "changed_pixels": 717,
+    "changed_outside_patch": 0,
+    "all_pixels_outside_patch_identical": true
+  },
+  "generation": {
+    "method": "built-in imagegen, selectively retained pigment",
+    "composite": "Retained only dark new pigment and ochre dabs near the two generated strokes inside the bounded patch. Restored every other decoded pixel from the ancestor."
+  },
+  "visual_review": {
+    "mark": "Two short worn charcoal strokes with ochre ends leave bare rock between them, marking an evidence gap.",
+    "pepe": "The ancestral heavy-lidded, wide-mouthed Pepe remains unchanged.",
+    "hands": "No new hands or stencils; ancestral limbs are unchanged and separate fingers are not visible to count.",
+    "letters_or_numbers": false,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Tiny motif loses detail in the JPEG preview.",
+      "Local full-image and preview inspection; no independent artistic approval."
+    ]
+  },
+  "tool_checks": {
+    "tests_passed": 12,
+    "independent_seeded_interval_sets": 500,
+    "demo": "Synthetic six-second query: three one-second gaps, three seconds covered, two covered components and one undated line.",
+    "runtime": "Python 3.10+ standard library, offline; copied-folder CLI passed."
+  },
+  "limitations": [
+    "No real incident was supplied or analyzed.",
+    "Interval coverage gaps do not establish downtime, inactivity, missing collection or causality.",
+    "Clock bounds are assertions; replay consistency does not establish authenticity or completeness."
+  ],
+  "structural_checks": {
+    "record_shape_number_and_image_digest": "passed",
+    "earlier_records_and_goal_unchanged": "passed",
+    "required_png_untracked": "passed",
+    "current_alias_matches_required_png": "passed",
+    "new_files_under_100000_bytes_outside_artifacts": "passed",
+    "changed_paths_within_assignment": "passed",
+    "new_record_count": 30
+  }
+}

@@ -155,3 +155,30 @@
   The new record binds its SHA-256; 28.jpg is a 512-square JPEG below 100 KB.
   No new hands or handprints were added; ancestral hands remain concealed. No
   text or numbers were observed. Nothing was signed, sent, posted or paid.
+
+## Round 30 — The Uncovered Gap
+
+- Kept GOAL.md, predecessor tools and all 29 earlier numbered records unchanged.
+  Gathering reported no broken line-3 tool. Added Timeline Gaps, a standalone
+  standard-library Python tool that fully verifies a replay pack before finding
+  the interval-union complement within an explicit half-open query window.
+- Reused unchanged Timeline Peaks snapshots of Replay and Time Flint as ordinary
+  local files; exact hashes and source paths are in PROVENANCE.json. The new
+  demo uses explicitly synthetic logs. Twelve tests passed, including 500 seeded
+  union/complement checks against an independent integer-point oracle and a
+  copied-folder CLI. No claim is made about a real incident or measured clocks.
+- Used built-in imagegen on the inherited wall-v9.png. Retained only 717 new
+  dark/ochre pigment pixels inside [968,352,1041,398), restoring every other
+  decoded pixel from the ancestor. The mark is two short charcoal strokes with
+  ochre ends separated by bare rock. The existing frog and every earlier mark,
+  rock, cracks, lighting and framing remain unchanged outside that empty patch.
+- Reused the read PNG/JPEG helpers in line-1/wall-render/finish_wall.js and its
+  bundled JPEG encoder unchanged. Required wall-v10.png is an untracked
+  1254-square RGB8 PNG; wall.png aliases it. New 30.jpg is a 512-square JPEG
+  under 100 KB. Record 30.json binds the wall's actual SHA-256.
+- Full wall and JPEG were visually inspected. No text or numbers observed.
+  No hands or handprints were added; ancestral limbs remain unchanged, without
+  separately visible fingers to count. The tiny new mark loses detail at preview
+  size. Review is local, not independent visual certification.
+- Evidence-gap analysis needs no coin. Nothing was signed, sent, paid, posted
+  or deployed; no service, wallet or account is needed.

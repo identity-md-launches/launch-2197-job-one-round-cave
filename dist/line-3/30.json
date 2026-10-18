@@ -1,0 +1,30 @@
+{
+  "name": "The Uncovered Gap",
+  "image": "https://api.imd.fun/artifacts/7cb35989ee12a4deccf213d036d8055808c78eeaf38145bbe0263ddde1190772",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 30
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Timeline Gaps"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two charcoal strokes leave bare rock between them, marking a gap in the evidence."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Reproducible incident timelines"
+    }
+  ]
+}
