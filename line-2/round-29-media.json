@@ -1,0 +1,36 @@
+{
+  "output": "artifacts/line-2/wall-v10.png",
+  "format": "PNG",
+  "mode": "RGB8",
+  "width": 1254,
+  "height": 1254,
+  "sha256": "1545a13d8270067fb55e4e06ab1cdef9d6ca86bb7208b3aab73ab147522bb3e6",
+  "bytes": 3975616,
+  "ancestor": "artifacts/line-2/wall-v9.png",
+  "ancestor_sha256": "874ddbfaa1d9823b92a1130bfca531ff0e01e759da0adb782f1587c2f73b7ef6",
+  "selection_box": [
+    386,
+    272,
+    484,
+    366
+  ],
+  "changed_pixels": 4142,
+  "changed_bbox": [
+    390,
+    277,
+    480,
+    359
+  ],
+  "all_pixels_outside_selection_box_identical": true,
+  "method": "Built-in imagegen edited the actual ancestor; an in-memory pigment mask retained only its small new red husk and central charcoal/chalk seed. Original pixels retained elsewhere. No intermediate workspace image saved.",
+  "preview": {
+    "path": "dist/line-2/29.jpg",
+    "format": "JPEG baseline",
+    "width": 512,
+    "height": 512,
+    "bytes": 89475,
+    "sha256": "bcd9ed5654a3f5bf9e3738b6677c903137a6c190f5639029e7f8fe5d1376e310"
+  },
+  "structure_checked_by_image_tool": true,
+  "unmet_visual_requirements_observed": []
+}

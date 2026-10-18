@@ -1,0 +1,78 @@
+{
+  "suites": [
+    {
+      "suite": "line-2/tools/json-citations",
+      "tests": 16,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/json-crosscheck",
+      "tests": 19,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/json-lantern",
+      "tests": 17,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-crosscheck",
+      "tests": 18,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-lantern",
+      "tests": 12,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-replay",
+      "tests": 14,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-seal",
+      "tests": 13,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-text-window",
+      "tests": 14,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-window",
+      "tests": 14,
+      "exit_code": 0
+    }
+  ],
+  "tests": 137,
+  "all_passed": true,
+  "scope_checked": true,
+  "goal_byte_identical": true,
+  "all_28_older_records_and_previews_byte_identical": true,
+  "all_inherited_tools_and_tests_byte_identical": true,
+  "new_record_schema_and_hash_checked": true,
+  "new_record_count": 29,
+  "new_nonartifact_files_within_100000_bytes": true,
+  "required_wall_untracked": true,
+  "documented_demo": {
+    "exit_code": 0,
+    "finding_count": 3,
+    "retained": 2,
+    "omitted": 1
+  },
+  "documented_real_review": {
+    "exit_code": 0,
+    "total_bytes": 29366,
+    "member_names": 650,
+    "finding_count": 0
+  },
+  "media_structurally_valid": true,
+  "local_visual_review": {
+    "pepe_preserved": true,
+    "hands": "Both unchanged inherited hands have four fingers and one thumb; no hands added.",
+    "unmet_requirements_observed": [],
+    "limitation": "Local visual review only; pigment edges can retain generated rock texture, and JPEG reduces fine detail."
+  }
+}

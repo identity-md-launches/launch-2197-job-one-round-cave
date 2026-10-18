@@ -1,0 +1,30 @@
+{
+  "name": "The Opened Husk",
+  "image": "https://api.imd.fun/artifacts/1545a13d8270067fb55e4e06ab1cdef9d6ca86bb7208b3aab73ab147522bb3e6",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 29
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "JSON Crosscheck"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "An opened ochre husk exposes a dark seed that its shell concealed."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Review deceptive Unicode with precise evidence"
+    }
+  ]
+}

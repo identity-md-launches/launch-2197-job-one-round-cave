@@ -1,0 +1,57 @@
+{
+  "tool": "json-crosscheck/1",
+  "unicode_version": "15.0.0",
+  "engine_sha256": {
+    "json-citations": "11d92b07459f3fd7e1007ba408221501fce37d6c58b9ef04bf544c801aba766f",
+    "json-lantern": "2a30a232b22c9a85744609cce3324a83361172276e961e8195a4acd6e8c0f87e",
+    "unicode-lantern": "e50d1fb77bd6cfd723c2dbd3749bedf2034c96ea3a2eaf88e4beac4610f6e2f5"
+  },
+  "sources": [
+    {
+      "index": 0,
+      "label": "gathering/measured-effect-band.json",
+      "sha256": "a23c8661ac62cfd5912acd495dfe0c5960dfb06f49c04f32e21a60b9800c0b3d",
+      "bytes": 11438,
+      "member_names": 236
+    },
+    {
+      "index": 1,
+      "label": "gathering/benchmark-display-demo.json",
+      "sha256": "848ad5876c3d3d5bef6d46ab09ff50a5f25e04dd076be5fb2743cecc9a286917",
+      "bytes": 3161,
+      "member_names": 68
+    },
+    {
+      "index": 2,
+      "label": "gathering/effect-band-demo.json",
+      "sha256": "59742447b9481956f5bffce8c230cea3cc6dbbc1478d6cc08409a47ef516b73e",
+      "bytes": 14767,
+      "member_names": 346
+    }
+  ],
+  "total_bytes": 29366,
+  "member_names": 650,
+  "distinct_skeletons": 103,
+  "finding_count": 0,
+  "retained_findings": 0,
+  "omitted_findings": 0,
+  "truncated": false,
+  "findings": [],
+  "assessment": "no-covered-key-collisions-found",
+  "limitations": [
+    "Heuristic triage, not proof of deception or safety; not full UTS #39.",
+    "Whole decoded JSON member names, NFKC then limited case-sensitive Lantern map.",
+    "Only across supplied files, at any object depth; values are not compared.",
+    "Unrelated object paths can collide; this is not a schema compatibility verdict.",
+    "Equivalent encodings of the same decoded name are not collisions.",
+    "Each later key occurrence with a different earlier-file spelling counts once.",
+    "File order affects counts; witnesses use file order then original byte order.",
+    "Witnesses are earliest unequal spellings, not all pairs. Duplicate keys remain distinct.",
+    "Ranges are zero-based half-open original bytes, including both string quotes.",
+    "Locations use zero-based object-pair indexes with key/value roles and array indexes.",
+    "Previews are inert ASCII, capped at 64 raw bytes and 40 decoded code points.",
+    "Evidence is not redacted; digests identify bytes, not source authenticity.",
+    "UTF-8 JSON only, depth at most 64, no BOM, NaN, infinity or lone surrogates.",
+    "Does not detect every dangerous character; use JSON Lantern for other patterns."
+  ]
+}

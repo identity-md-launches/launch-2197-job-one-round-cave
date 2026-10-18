@@ -198,3 +198,33 @@
   ROUND-28.md. wall.png now aliases the untracked required wall-v9.png output.
 - Offline Unicode comparison needs no coin, payment, balance, price or pool.
   No secret, key, wallet, environment read, signing, sending, posting or deployment.
+
+# Sources used in round 29
+
+- Preserved GOAL.md verbatim, all eight inherited tools and all 28 older records.
+  Read gathering/REPORT.md as data: no Line 2 breakage was reported. Its escape
+  decoding limitation motivated JSON Crosscheck's decoded cross-file key review.
+- Reused unchanged JSON Citations for validated token byte spans, JSON Lantern
+  for its pair-preserving parser helpers/bounds, and Unicode Lantern for its
+  limited lookalike map, inert labels and workspace file selection. No engine
+  source changed; no detection map was expanded. Standard-library-only code.
+- Reviewed three actual existing benchmark/calculation evidence files as JSON
+  data: gathering/measured-effect-band.json, benchmark-display-demo.json and
+  effect-band-demo.json. 29,366 bytes, 650 member names, no covered collisions.
+  Complete source hashes/scope are in round-29-real-review.json. The collision
+  demo and the generated reference-comparison cases are explicitly synthetic.
+- Added 19 tests, including 100 seeded brute-force witness comparisons and
+  portable four-folder operation. Tests confine fixtures to task scratch.
+  Full local suite results are in round-29-validation.json.
+- Used built-in imagegen on actual wall-v9.png after checking record 28's hash.
+  Kept only the new red ochre husk and charcoal/chalk seed above-left of Pepe.
+  A bounded in-memory pigment mask preserves all other pixels and older marks.
+  Both inherited five-digit hands are unchanged. One generation, no extra draft.
+- Read/reused gathering/make_preview.py solely as a standard-library PNG decoder
+  and JPEG encoder. No package installation or intermediate workspace image.
+  Inspected the finished full PNG and 512px JPEG. Dimensions, format, hashes,
+  limits and prompt are in ROUND-29.md and round-29-media.json.
+- Record 29 is count-plus-one. Required wall-v10.png remains untracked for
+  separate upload; wall.png is its relative alias. Existing records untouched.
+- No coin, balance, price, pool or payment is required for offline key review.
+  No secret, key, wallet, environment read, signing, sending, posting or deployment.
