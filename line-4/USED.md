@@ -145,3 +145,31 @@
   no additional picture is delivered.
 - Counted 23 existing numbered records and added 24. Goal and older records
   remain byte-identical. Updated wall.png's relative link to wall-v4.png.
+
+## Mark 29
+
+- Read the original goal, inherited exact engine and receipt implementation,
+  tool READMEs, latest record and wall-v9, and gathering/REPORT.md as data.
+  The gathering report lists no unresolved Line 4 functional defect.
+- Added Worksheet Flint in its own folder. Its engine is an unchanged ordinary
+  file snapshot of Unit Flint; explicit reference tokens carry exact quantities
+  between ordered steps. No inherited tool, goal or older record was changed.
+  Arithmetic needs no coin, exchange rate or payment; no chain value is invented.
+- All 13 new tests passed, including 300 seeded independent Fraction chains,
+  56 inherited tests passed, the documented passing command passed, and the
+  failing-budget demo returned its expected exit 1 both here and in a standalone
+  copied folder in scratch. No dependency was installed.
+- Used the built-in image generator to edit wall-v9, then retained only its
+  charcoal/ochre pigment for three linked pebbles on bare upper-left stone.
+  Read and adapted preserve-mark-28.js for pixel preservation; the mark-29
+  script and process JSON describe the mask. All pixels outside that mask
+  equal the ancestor. No old painting was redrawn, moved or erased.
+- Read and used gathering/make_preview.py for the sole new 512px JPEG, 29.jpg.
+  Inspected final PNG and JPEG; both inherited hands retain four fingers and
+  one thumb. No new hands or stencils were added. Image inspection tools
+  validated both formats and dimensions.
+- Counted 28 existing numbered JSON records and added 29, preserving all older
+  records. Updated the wall.png relative alias to the required wall-v10.png.
+  The required PNG remains untracked for separate upload. Only the required
+  wall and JPEG were saved as new pictures in the workspace. Scope and byte
+  comparisons are recorded in validation-29.json.

@@ -1,0 +1,30 @@
+{
+  "name": "One step carries another",
+  "image": "https://api.imd.fun/artifacts/6378988da9349eb55a945ba5bbb3100e06ec76abc19e9cf8ffdf30b0b07f651c",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 29
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Worksheet Flint"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three pebbles linked by ochre carry an exact measure from one step to the next."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Exact arithmetic with explicit unit dimensions"
+    }
+  ]
+}

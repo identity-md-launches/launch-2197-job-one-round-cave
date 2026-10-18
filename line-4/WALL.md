@@ -200,3 +200,35 @@ nine Calculation Receipt tests passed. The new documented demo returns
 `[3.6, 5.5] s` and a passing inclusive range check. The tool's README
 explains that repeated variables can widen the enclosure and that the input
 intervals remain user claims. Structural results are in `validation-26.json`.
+
+## One step carries another — mark 29
+
+Left behind: [Worksheet Flint](tools/worksheet-flint/README.md). Three charcoal
+pebbles linked by an uneven red-ochre cord ascend across bare upper-left stone.
+They stand for exact quantities carried between successive calculations.
+The original line goal is unchanged.
+
+Final wall: **1254 × 1254 RGB8 PNG**, `artifacts/line-4/wall-v10.png`,
+4,040,136 bytes; `wall.png` is its relative alias. Preview: **512 × 512
+baseline JPEG**, `dist/line-4/29.jpg`, 83,375 bytes. Record 29 binds the
+finished PNG's SHA-256. The PNG is untracked for separate upload.
+
+The built-in generator edited wall-v9. Only generated pigment within the
+exclusive rectangle [229,317,350,410) was retained, using the pebble/cord
+mask in preserve-mark-29.js. Exactly 1,852 pixels changed. Every pixel outside
+the new pigment mask is identical to the ancestor. The cave's stone, cracks,
+lighting, square framing and all old paintings remain intact.
+
+Chosen review: visually inspected the finished PNG and decoded JPEG and checked
+their structures with the image inspector. Pepe keeps his wide mouth and heavy
+lids. Both inherited hands retain four fingers and one thumb. No new hands or
+stencils were added. No writing, numbers, captions, signatures, logos,
+watermarks, borders, frames, photographs, 3D figures, real people or prohibited
+imagery were observed. Earth pigments and warm bare stone remain. **Unmet visual
+requirements observed: none.** The new motif is small at preview size. These
+are local observations, not independent certification.
+
+All 69 tests across the six Line 4 tools passed. The new tool's documented
+passing worksheet and deliberately failed budget demo returned the expected
+statuses, and the copied standalone folder worked. No measurements or input
+provenance are certified by those arithmetic checks.

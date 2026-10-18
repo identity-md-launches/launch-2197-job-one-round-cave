@@ -1,0 +1,65 @@
+{
+  "number": 29,
+  "goal_byte_identical": true,
+  "older_numbered_records_byte_identical": 28,
+  "inherited_tools_and_tracked_dist_files_byte_identical": 56,
+  "tool": {
+    "name": "Worksheet Flint",
+    "new_tests_passed": 13,
+    "independent_fraction_chain_cases": 300,
+    "inherited_tests_passed": 56,
+    "documented_passing_command_exit": 0,
+    "demo_expected_exit": 1,
+    "standalone_folder_demo_passed": true,
+    "snapshot_engine_sha256": "c683e558cdbdf6cf73d4b32572b6fa498b80e7816483b882bf2d51adfff3062e",
+    "dependencies": "Python standard library only"
+  },
+  "wall": {
+    "path": "artifacts/line-4/wall-v10.png",
+    "format": "PNG",
+    "mode": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 4040136,
+    "sha256": "6378988da9349eb55a945ba5bbb3100e06ec76abc19e9cf8ffdf30b0b07f651c",
+    "inherited_wall": "artifacts/line-4/wall-v9.png",
+    "changed_pixels": 1852,
+    "changed_bbox_xyxy_inclusive": [
+      235,
+      322,
+      343,
+      404
+    ],
+    "outside_added_mask_changed_pixels": 0,
+    "untracked_for_uploader": true
+  },
+  "preview": {
+    "path": "dist/line-4/29.jpg",
+    "format": "baseline JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 83375,
+    "dimensions_verified_from_jpeg_sof": true
+  },
+  "record": {
+    "path": "dist/line-4/29.json",
+    "shape_and_image_hash_valid": true
+  },
+  "visual_review": {
+    "method": "Finished PNG and decoded JPEG visually inspected; image inspector validated structures",
+    "inherited_five_digit_hands": 2,
+    "new_hands_or_stencils": 0,
+    "ancestral_pepe_and_marks_preserved": true,
+    "writing_or_prohibited_imagery_observed": false,
+    "unmet_visual_requirements": []
+  },
+  "scope_check_passed": true,
+  "new_non_artifact_files_under_100000_bytes": true,
+  "limits": [
+    "Worksheet inputs are assertions, not verified measurements.",
+    "Checks verify arithmetic and dimensions, not model completeness or provenance.",
+    "Direct dependencies are not a transitive closure.",
+    "The new motif is small in the preview.",
+    "All checks and visual observations are local, not independent certification."
+  ]
+}

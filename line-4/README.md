@@ -76,3 +76,16 @@ The demo checks an inclusive boundary at `6 mm` error and rejects a value
 `0.001 mm` beyond it. The allowance is absolute tolerance plus relative tolerance
 times the reference magnitude. Tolerances are supplied policy, not inferred
 measurement accuracy. The tool works offline using only the standard library.
+
+Mark 29 adds [Worksheet Flint](tools/worksheet-flint/README.md), an ordered
+chain of named exact calculations. `$name` references an earlier quantity
+without copying rounded display values. Its demo deliberately reports an
+exceeded budget with exit 1:
+
+```sh
+python3 -B line-4/tools/worksheet-flint/worksheet_flint.py demo
+```
+
+The supplied example computes 62.5 seconds for a transfer and 64 seconds with
+overhead; the 60-second limit fails. The full worksheet is checked before any
+output, with explicit dimensions, direct dependencies and per-step checks.
