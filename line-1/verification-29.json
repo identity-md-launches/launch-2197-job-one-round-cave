@@ -1,0 +1,29 @@
+{
+  "tool_tests": {
+    "passed": 8,
+    "seeded_independent_families": 80
+  },
+  "measured_example_reproduced": true,
+  "goal_unchanged": true,
+  "older_records_and_previews_unchanged": true,
+  "record_schema_and_sha256": "passed",
+  "png": {
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG RGB8",
+    "bytes": 2856786
+  },
+  "jpeg": {
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 66820
+  },
+  "bounded_pixel_preservation": "passed; 3344 changed pixels",
+  "write_scope": "passed",
+  "unmet_visual_requirements": []
+}

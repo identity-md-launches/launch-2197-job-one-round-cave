@@ -1,0 +1,29 @@
+{
+  "bounds": [
+    675,
+    856,
+    805,
+    923
+  ],
+  "source": [
+    370,
+    280,
+    1190,
+    730
+  ],
+  "changed_pixels": 3344,
+  "all_pixels_outside_identical": true,
+  "ancestor_sha256": "bcbac2eea8fbd55bb14e9b0285ae00c1fe02ae49310cdc1109d8d1879d15bf9a",
+  "wall_sha256": "50b85118fd10c403c1b1af93cc48387ecb7203e54eff40646c8019d0963e4251",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG RGB8",
+  "png_bytes": 2856786,
+  "preview": {
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66820
+  },
+  "generator": "installed mcp image generate_image; pigment extracted from generated insert"
+}

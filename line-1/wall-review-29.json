@@ -1,0 +1,36 @@
+{
+  "record": 29,
+  "wall": "artifacts/line-1/wall-v10.png",
+  "current_wall": "artifacts/line-1/wall.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG RGB8",
+  "preview": {
+    "path": "dist/line-1/29.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66820
+  },
+  "visual_review": "Full PNG and 512px JPEG inspected with view_image. Two inherited Pepe cave figures retained. New worn charcoal counting-stone groups with ochre/chalk loops on previously unpainted rock.",
+  "hands": "No new hands or stencils. Inherited hands concealed; no visible fingers to count.",
+  "preservation": {
+    "changed_pixels": 3344,
+    "bounds": [
+      675,
+      856,
+      805,
+      923
+    ],
+    "all_pixels_outside_identical": true
+  },
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "New small motif is less distinct in the 512px preview.",
+    "Local visual review only; no independent artistic approval."
+  ],
+  "image_tool": "installed mcp__image__generate_image",
+  "prompt": "Isolated two clusters of three charcoal pebbles enclosed by irregular ochre and chalk loops on warm rough cave stone; worn handmade earth pigment, no text, hands, people, logos or frames. Generated pigment composited onto inherited wall."
+}
