@@ -1,15 +1,15 @@
 {
-  "method": "Only generated chalk and charcoal band motif transferred onto ancestral bare rock; all other decoded pixels remain identical.",
+  "method": "Only generated chalk bars and ochre pebble pigment transferred onto ancestral bare rock; all other decoded pixels remain identical.",
   "image_tool": "image_gen.imagegen",
-  "ancestor": "artifacts/gathering/wall-v8.png",
-  "ancestor_sha256": "482215a63cbe20152d4bdd70f744f7b60c811522f407fe1a61beffa1f8a45447",
-  "generated_donor_sha256": "2ffd8408fdba3b044b0afc443cd818c4fbffc545ce69825edc066f8ad7ad3fab",
+  "ancestor": "artifacts/gathering/wall-v9.png",
+  "ancestor_sha256": "32a8fef5f5ec256ed76c01ff28e1f914f50d011b0a5417a78a1d9ed33c5a34b0",
+  "generated_donor_sha256": "8a51aaabcbecbc5aed9d60cd10d3d096e6c575624cae62cd9ab2a1f96fcbbcfa",
   "destination_box": [
-    912,
-    784,
-    1008,
-    853
+    928,
+    1128,
+    1023,
+    1194
   ],
-  "changed_pixels": 1361,
-  "preservation": "All pixels outside the added pigment mask are identical to Gathering 08."
+  "changed_pixels": 1160,
+  "preservation": "All pixels outside the added pigment mask are identical to Gathering 09."
 }

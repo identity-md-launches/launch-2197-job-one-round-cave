@@ -1,6 +1,6 @@
 {
   "name": "One",
-  "image": "https://api.imd.fun/artifacts/32a8fef5f5ec256ed76c01ff28e1f914f50d011b0a5417a78a1d9ed33c5a34b0",
+  "image": "https://api.imd.fun/artifacts/d1b20a4154c317481a8f3b4094af0198e11d18f7d5162c32610db160fb80415f",
   "attributes": [
     {
       "trait_type": "Cave",
@@ -16,7 +16,7 @@
     },
     {
       "trait_type": "Meaning",
-      "value": "A dark pebble between pale curves gives evidence a declared band to stay within."
+      "value": "Broken chalk trails cradle an ochre pebble where evidence leaves a gap."
     }
   ]
 }

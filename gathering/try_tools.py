@@ -8,6 +8,15 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 CASES = [
+ ('shared gap budget declared failure', ['shared/gap-budget/gap_budget.py', 'demo'], 1),
+ ('observed CLI journal coverage', ['gathering/try_gap_budget.py'], 0),
+ ('worksheet passing exact chain', ['line-4/tools/worksheet-flint/worksheet_flint.py', 'check'], 0, json.dumps({'schema':'worksheet-flint/1','steps':[{'name':'distance','expression':'10 km'},{'name':'duration','expression':'2 h'},{'name':'speed','expression':'$distance / $duration','to':'m/s','expect':'5 km/h','at_least':'1 m/s','at_most':'2 m/s'}]})),
+ ('cluster deletion influence', ['line-1/tools/cluster-influence/cluster_influence.py', '--demo', '--max-details', '1'], 0),
+ ('executed policy cluster review', ['line-1/tools/cluster-influence/try_policies.py'], 0),
+ ('decoded JSON crosscheck', ['line-2/tools/json-crosscheck/json_crosscheck.py', '--demo', '--max-findings', '2'], 0),
+ ('actual decoded JSON keys', ['line-2/tools/json-crosscheck/json_crosscheck.py', '--files', 'gathering/measured-effect-band.json', 'gathering/benchmark-display-demo.json', 'gathering/effect-band-demo.json'], 0),
+ ('timeline coverage gaps', ['line-3/tools/timeline-gaps/timeline_gaps.py', 'demo'], 0),
+ ('worksheet declared budget failure', ['line-4/tools/worksheet-flint/worksheet_flint.py', 'demo'], 1),
  ('measured effect band', ['gathering/try_effect_band.py'], 0),
  ('shared effect band', ['shared/effect-band/effect_band.py', 'demo'], 0),
  ('single deletion influence', ['line-1/tools/case-influence/case_influence.py', '--demo', '--max-details', '2'], 0),
@@ -70,12 +79,16 @@ CASES = [
 
 def main():
     results = []
-    for name, args, expected in CASES:
+    for case in CASES:
+        name, args, expected = case[:3]
+        stdin = case[3] if len(case) > 3 else None
         command = [sys.executable, '-B', *args]
-        run = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=60)
+        run = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=60, input=stdin)
         row = {'name': name, 'command': ['python3', '-B', *args],
                'expected_exit': expected, 'exit_code': run.returncode,
                'passed': run.returncode == expected}
+        if stdin is not None:
+            row['stdin'] = json.loads(stdin)
         if run.stdout:
             try:
                 value = json.loads(run.stdout)
@@ -87,7 +100,7 @@ def main():
                     'opening_lines': run.stdout.splitlines()[:7]}
                 row['passed'] &= row['text']['printable_ascii_and_lf']
             # Small numeric/evidence summaries; full reports are reproducible.
-            keys = ['cases_changing_decision_or_direction', 'deletions_checked', 'details_omitted', 'complete_diagnostics_sha256', 'omitted_findings', 'total_bytes', 'token_count', 'distinct_skeletons', 'boundary', 'outside', 'margin', 'allowed_error', 'absolute_error', 'passes', 'case_count', 'recheck', 'rounded', 'exact_value', 'error', 'filters', 'comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
+            keys = ['clusters_checked', 'clusters_changing_decision_or_direction', 'durations_us', 'member_names', 'cases_changing_decision_or_direction', 'deletions_checked', 'details_omitted', 'complete_diagnostics_sha256', 'omitted_findings', 'total_bytes', 'token_count', 'distinct_skeletons', 'boundary', 'outside', 'margin', 'allowed_error', 'absolute_error', 'passes', 'case_count', 'recheck', 'rounded', 'exact_value', 'error', 'filters', 'comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
                     'smallest_evaluated_size_meeting_target', 'sizes', 'finding_count',
                     'assessment', 'sha256', 'value', 'unit', 'check', 'replay',
                     'tampered_report_rejected', 'tampered_timeline_rejected', 'review_errors',

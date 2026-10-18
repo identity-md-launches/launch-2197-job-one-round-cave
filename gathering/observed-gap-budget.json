@@ -1,0 +1,409 @@
+{
+  "data_kind": "observed_local_process_journal",
+  "executions": [
+    {
+      "tool": "clusters",
+      "arguments": [
+        "line-1/tools/cluster-influence/cluster_influence.py",
+        "--demo"
+      ],
+      "expected_exit": 0,
+      "observed_exit": 0,
+      "start": "2026-10-18T22:23:30.302086Z",
+      "end": "2026-10-18T22:23:30.371788Z",
+      "stdout_sha256": "f20438ee8eb57f66b805b1457f49f41787112b2b93db31929e557e9f70de8fe2"
+    },
+    {
+      "tool": "json-keys",
+      "arguments": [
+        "line-2/tools/json-crosscheck/json_crosscheck.py",
+        "--demo"
+      ],
+      "expected_exit": 0,
+      "observed_exit": 0,
+      "start": "2026-10-18T22:23:30.371861Z",
+      "end": "2026-10-18T22:23:30.433263Z",
+      "stdout_sha256": "649bb241eaf0496913107022b9bad383e4b9cb8a314c1ed832a5e9c85de5f003"
+    },
+    {
+      "tool": "gaps",
+      "arguments": [
+        "line-3/tools/timeline-gaps/timeline_gaps.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "observed_exit": 0,
+      "start": "2026-10-18T22:23:30.433339Z",
+      "end": "2026-10-18T22:23:30.491212Z",
+      "stdout_sha256": "e67dac07eb47d9a2a2f5e09a301e8b5e3405563d670853cbbd1e9c661542cb4e"
+    },
+    {
+      "tool": "worksheet",
+      "arguments": [
+        "line-4/tools/worksheet-flint/worksheet_flint.py",
+        "demo"
+      ],
+      "expected_exit": 1,
+      "observed_exit": 1,
+      "start": "2026-10-18T22:23:30.491322Z",
+      "end": "2026-10-18T22:23:30.553807Z",
+      "stdout_sha256": "425e518e9bef936b1a268b569c7527fa161e63a0ba0cb6ca9a664e1960db9acc"
+    }
+  ],
+  "pack": {
+    "format": "timeline-replay/1",
+    "engine_sha256": "caa513722a9767e908dc4a5e49711e623e0a34c8b18753c3d01cda8167988e38",
+    "options": {
+      "ignore_unmatched": false,
+      "clock_uncertainty_ms": 0
+    },
+    "inputs": [
+      {
+        "source": "local-cli-journal.log",
+        "sha256": "c279899161da7647b2fb04e47ffddd1c58ff32b7dc4f37d5fb295508489096d1",
+        "base64": "MjAyNi0xMC0xOFQyMjoyMzozMC4zMDIwODZaIGNsdXN0ZXJzIHN0YXJ0CjIwMjYtMTAtMThUMjI6MjM6MzAuMzcxNzg4WiBjbHVzdGVycyBleGl0PTAKMjAyNi0xMC0xOFQyMjoyMzozMC4zNzE4NjFaIGpzb24ta2V5cyBzdGFydAoyMDI2LTEwLTE4VDIyOjIzOjMwLjQzMzI2M1oganNvbi1rZXlzIGV4aXQ9MAoyMDI2LTEwLTE4VDIyOjIzOjMwLjQzMzMzOVogZ2FwcyBzdGFydAoyMDI2LTEwLTE4VDIyOjIzOjMwLjQ5MTIxMlogZ2FwcyBleGl0PTAKMjAyNi0xMC0xOFQyMjoyMzozMC40OTEzMjJaIHdvcmtzaGVldCBzdGFydAoyMDI2LTEwLTE4VDIyOjIzOjMwLjU1MzgwN1ogd29ya3NoZWV0IGV4aXQ9MQo="
+      }
+    ],
+    "timeline": {
+      "version": 1,
+      "sources": [
+        {
+          "source": "local-cli-journal.log",
+          "sha256": "c279899161da7647b2fb04e47ffddd1c58ff32b7dc4f37d5fb295508489096d1"
+        }
+      ],
+      "events": [
+        {
+          "start_utc": "2026-10-18T22:23:30.302086Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.302087Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 1,
+          "line_sha256": "fc894d2d564ccaaae05dcfbe97bcdfad64bb648fc80fde16dd48b3bfc5efb39f",
+          "message": "clusters start",
+          "overlap_group": 1
+        },
+        {
+          "start_utc": "2026-10-18T22:23:30.371788Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.371789Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 2,
+          "line_sha256": "093aa6bdbc039dc2647d337dc05e6850cae4abe34f63d406382cd62fa9fb73ad",
+          "message": "clusters exit=0",
+          "overlap_group": 2
+        },
+        {
+          "start_utc": "2026-10-18T22:23:30.371861Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.371862Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 3,
+          "line_sha256": "5f69488771acd893081c9d6687d830e812417c1e3e35cbce1683cfc4dac7f4aa",
+          "message": "json-keys start",
+          "overlap_group": 3
+        },
+        {
+          "start_utc": "2026-10-18T22:23:30.433263Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.433264Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 4,
+          "line_sha256": "8a971a26f80e3996de120567177c8e12e81114b6b61545a62f27d7a491eb4b03",
+          "message": "json-keys exit=0",
+          "overlap_group": 4
+        },
+        {
+          "start_utc": "2026-10-18T22:23:30.433339Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.433340Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 5,
+          "line_sha256": "6c48cd39a5d27cbd201fce3423a78e535a24b564072fba970da9c1ef7cf4eb26",
+          "message": "gaps start",
+          "overlap_group": 5
+        },
+        {
+          "start_utc": "2026-10-18T22:23:30.491212Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.491213Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 6,
+          "line_sha256": "066e3f29d45cea11904f03d75f1d46148322fab527fd4e4c1eb5bbbb960db99d",
+          "message": "gaps exit=0",
+          "overlap_group": 6
+        },
+        {
+          "start_utc": "2026-10-18T22:23:30.491322Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.491323Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 7,
+          "line_sha256": "7ab8f28c21d9352f4f07ec76ed121f44b869e782feeb2e7f4a22077259b33e98",
+          "message": "worksheet start",
+          "overlap_group": 7
+        },
+        {
+          "start_utc": "2026-10-18T22:23:30.553807Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.553808Z",
+          "precision": "6 fractional digit(s)",
+          "source": "local-cli-journal.log",
+          "line": 8,
+          "line_sha256": "dd0257659683d28c189cfd32a08a9594fcb6fa06f78bad366227bf633a7c3d85",
+          "message": "worksheet exit=1",
+          "overlap_group": 8
+        }
+      ],
+      "omitted": []
+    }
+  },
+  "pack_sha256": "e70910022f3971258ea9c60c28bb7ff3652f78ca67f046ac1b55f39203a37ff8",
+  "review": {
+    "schema": "gap-budget/1",
+    "coverage": {
+      "format": "timeline-gaps/1",
+      "replay": {
+        "verified": true,
+        "sources": 1,
+        "events": 8,
+        "omitted": 0,
+        "clock_uncertainty_ms": 0
+      },
+      "window": {
+        "start_utc_inclusive": "2026-10-18T22:23:30.302068Z",
+        "end_utc_exclusive": "2026-10-18T22:23:30.553907Z",
+        "duration_us": 251839
+      },
+      "counts": {
+        "timestamped_events": 8,
+        "intersecting_events": 8,
+        "undated_lines": 0,
+        "covered_components": 8,
+        "gaps_total": 9,
+        "gaps_shown": 2,
+        "gaps_not_shown": 7
+      },
+      "durations_us": {
+        "window": 251839,
+        "covered": 8,
+        "uncovered": 251831,
+        "longest_gap": 69701
+      },
+      "gaps": [
+        {
+          "start_utc_inclusive": "2026-10-18T22:23:30.302068Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.302086Z",
+          "duration_us": 18
+        },
+        {
+          "start_utc_inclusive": "2026-10-18T22:23:30.302087Z",
+          "end_utc_exclusive": "2026-10-18T22:23:30.371788Z",
+          "duration_us": 69701
+        }
+      ],
+      "engine_sha256": "caa513722a9767e908dc4a5e49711e623e0a34c8b18753c3d01cda8167988e38",
+      "options": {
+        "ignore_unmatched": false,
+        "clock_uncertainty_ms": 0
+      },
+      "interpretation": "Gaps are the complement of the union of dated-event uncertainty intervals within the requested half-open window. They are gaps in this evidence model, not proof of inactivity, downtime, missing collection, or causality. Timestamp precision is modeled as truncation; clock bounds are analyst assertions. Undated lines cannot be placed. Replay proves internal consistency, not authenticity or completeness. Messages and source bytes are not echoed."
+    },
+    "worksheet_request": {
+      "schema": "worksheet-flint/1",
+      "steps": [
+        {
+          "name": "window",
+          "expression": "(251839 / 1000000) * s",
+          "to": "s"
+        },
+        {
+          "name": "covered",
+          "expression": "(8 / 1000000) * s",
+          "to": "s"
+        },
+        {
+          "name": "uncovered",
+          "expression": "(251831 / 1000000) * s",
+          "to": "s",
+          "at_most": "1 s"
+        },
+        {
+          "name": "longest_gap",
+          "expression": "(69701 / 1000000) * s",
+          "to": "s",
+          "at_most": "1 s"
+        },
+        {
+          "name": "accounted",
+          "expression": "$covered + $uncovered",
+          "expect": "$window",
+          "to": "s"
+        },
+        {
+          "name": "uncovered_fraction",
+          "expression": "$uncovered / $window"
+        }
+      ]
+    },
+    "worksheet_result": {
+      "schema": "worksheet-flint/1",
+      "steps": [
+        {
+          "request": {
+            "name": "window",
+            "expression": "(251839 / 1000000) * s",
+            "to": "s"
+          },
+          "dependencies": [],
+          "base_value": "251839/1000000",
+          "base_unit": "s",
+          "dimensions": {
+            "length": 0,
+            "mass": 0,
+            "time": 1,
+            "data": 0
+          },
+          "value": "0.251839",
+          "unit": "s",
+          "checks": {},
+          "passes": true
+        },
+        {
+          "request": {
+            "name": "covered",
+            "expression": "(8 / 1000000) * s",
+            "to": "s"
+          },
+          "dependencies": [],
+          "base_value": "1/125000",
+          "base_unit": "s",
+          "dimensions": {
+            "length": 0,
+            "mass": 0,
+            "time": 1,
+            "data": 0
+          },
+          "value": "0.000008",
+          "unit": "s",
+          "checks": {},
+          "passes": true
+        },
+        {
+          "request": {
+            "name": "uncovered",
+            "expression": "(251831 / 1000000) * s",
+            "to": "s",
+            "at_most": "1 s"
+          },
+          "dependencies": [],
+          "base_value": "251831/1000000",
+          "base_unit": "s",
+          "dimensions": {
+            "length": 0,
+            "mass": 0,
+            "time": 1,
+            "data": 0
+          },
+          "value": "0.251831",
+          "unit": "s",
+          "checks": {
+            "at_most": {
+              "base_value": "1",
+              "passes": true
+            }
+          },
+          "passes": true
+        },
+        {
+          "request": {
+            "name": "longest_gap",
+            "expression": "(69701 / 1000000) * s",
+            "to": "s",
+            "at_most": "1 s"
+          },
+          "dependencies": [],
+          "base_value": "69701/1000000",
+          "base_unit": "s",
+          "dimensions": {
+            "length": 0,
+            "mass": 0,
+            "time": 1,
+            "data": 0
+          },
+          "value": "0.069701",
+          "unit": "s",
+          "checks": {
+            "at_most": {
+              "base_value": "1",
+              "passes": true
+            }
+          },
+          "passes": true
+        },
+        {
+          "request": {
+            "name": "accounted",
+            "expression": "$covered + $uncovered",
+            "expect": "$window",
+            "to": "s"
+          },
+          "dependencies": [
+            "covered",
+            "uncovered",
+            "window"
+          ],
+          "base_value": "251839/1000000",
+          "base_unit": "s",
+          "dimensions": {
+            "length": 0,
+            "mass": 0,
+            "time": 1,
+            "data": 0
+          },
+          "value": "0.251839",
+          "unit": "s",
+          "checks": {
+            "expect": {
+              "base_value": "251839/1000000",
+              "passes": true
+            }
+          },
+          "passes": true
+        },
+        {
+          "request": {
+            "name": "uncovered_fraction",
+            "expression": "$uncovered / $window"
+          },
+          "dependencies": [
+            "uncovered",
+            "window"
+          ],
+          "base_value": "251831/251839",
+          "base_unit": "1",
+          "dimensions": {
+            "length": 0,
+            "mass": 0,
+            "time": 0,
+            "data": 0
+          },
+          "value": "251831/251839",
+          "unit": "1",
+          "checks": {},
+          "passes": true
+        }
+      ],
+      "passes": true
+    },
+    "passes": true,
+    "interpretation": [
+      "Budgets are user-supplied policy on timestamp interval coverage only.",
+      "Passing is not evidence of availability, complete logs, honest timestamps or clock accuracy.",
+      "Gaps are not measured downtime; wider asserted uncertainty may remove them.",
+      "Entire pack is replayed before selecting the window. Undated lines remain explicit.",
+      "All totals precede the displayed-gap cap. Fraction uses the complete window.",
+      "A trusted pack digest identifies bytes; replay establishes consistency, not authorship."
+    ]
+  },
+  "limitations": "These are actual process-observation timestamps, not real incident logs. Timestamp coverage measures discrete journal entries, not process runtime or availability. Clock accuracy is not measured; budgets are post hoc examples. Tool payload demos remain synthetic."
+}

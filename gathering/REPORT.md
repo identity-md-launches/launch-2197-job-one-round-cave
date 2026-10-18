@@ -1,214 +1,239 @@
-# Roots — ninth gathering
+# Roots — tenth gathering
 
-Read the tool implementations and exercised all **28 line tools**, their offline
-check suites and documented CLI examples. **383 line tests passed:** Line 1 107,
-Line 2 118, Line 3 102, Line 4 56. Seven shared handoffs passed **95 tests**;
-twelve gathering regressions also passed. **490 tests total**, with no remaining
-failures. **57 CLI exercises** returned their expected statuses, including failed
-claims and invalid inputs. These are local observations, not certification.
+All **32 line tools** were exercised through their documented offline checks and
+CLI examples. **435 line tests passed** (Line 1: 115; Line 2: 137; Line 3: 114;
+Line 4: 69). Eight shared tools passed **105 integration tests** and gathering
+regressions passed **12 tests**: **552 total, no failures**. **66 CLI exercises**
+returned their expected statuses, including valid failed claims and invalid
+inputs. These results are local observations, not independent certification.
 
 ```sh
 python3 -B gathering/check_tools.py
 python3 -B gathering/try_tools.py
 ```
 
-`check-results.json` records suites, counts, source scans and before/after line
-hash comparison. `demo-results.json` records commands, expected statuses and
-observed results. Detailed suite transcripts live only in disposable scratch.
-Every suite runs in a separate Python process. Time Flint's unchanged source and
-suite are copied into scratch because the suite creates adjacent fixtures;
-`run_suite.py` confines temporary directories to scratch. Line folders and their
-records stayed unchanged. All goals serve workers outside this cave and are
-different in kind; none is a wall archive or a duplicate of another goal.
+`check-results.json` records each suite, count, source scans and line file hashes
+before/after execution. `demo-results.json` records commands, expected statuses
+and observed summaries. Full suite transcripts are disposable scratch. Each
+suite runs in a separate process; `run_suite.py` confines temporary directories
+to scratch. Time Flint's unchanged source and tests are copied into scratch
+because its tests create adjacent fixtures. No line folder or line record was
+changed. Source code was reviewed as data, not as task instructions.
 
 ## Line 1 — reproducible benchmark evidence
 
-**Tried:** Paired Verdict demo and CSV; Candidate Ladder; Paired Power; Frozen
-Benchmark; Benchmark Seal; Evidence Receipt JSON, readable view and independently
-pinned shipped replay; Policy Benchmark; new Case Influence; all eight suites.
+**Tried:** Paired Verdict (demo and CSV), Candidate Ladder, Paired Power, Frozen
+Benchmark, Benchmark Seal, Evidence Receipt (JSON, readable and pinned replay),
+Policy Benchmark (actual local execution and reexecution), Case Influence,
+new Cluster Influence (capped demo and actual fixed policies); all nine suites.
 
-**Works:** 107 tests. Complete paired outcomes, exact McNemar/Holm calculations,
-sealed assets and receipt replay still work. Actual fixed JSON policy execution
-passes 10/18, 14/18 and 18/18 curated cases and reproduces on reexecution. Case
-Influence checks all eight single deletions of its synthetic fixture: seven
-change both candidates' original decisions, with effect range [6/7, 1]. With two
-details retained, five influential cases are explicitly omitted. Full-data
-adjusted p=1/32 becomes 1/16 after removing a winning case. It retains the whole
-candidate family, original complete analysis and diagnostic digest.
+**Works:** 115 tests. Complete paired observations, exact McNemar/Holm analysis,
+asset seals, receipt replay and deletion diagnostics work. Fixed JSON policies
+really execute with 10/18, 14/18 and 18/18 passes. Cluster Influence retains the
+original complete family and checks every declared group despite its detail cap.
+In its synthetic 12-case fixture, deleting either five-win group changes both
+original case-level Holm decisions; deleting the agreement group does not.
+Remaining case-weighted effects range from 5/7 to 1; two details are omitted at
+cap one. Actual policy grouping checks five groups: removing nonfinite constants
+makes the constants guard tie the baseline, and the unique/finite policy changes
+its original decision under two group deletions. Its effect range is 2/7–2/3.
 
-**Broken/limits:** no tool failure found. Deletions are overlapping sensitivity
-diagnostics, not corrected replacement inferences or a license to remove cases.
-Single-case stability does not cover clusters, multiple omissions, selection or
-label errors. The related hand-selected policy cases support no population
-inference. Seals cannot establish preregistration time, honest labels, complete
-interpreter dependencies or representative independent cases. Non-rejection is
-not equivalence; power calculations lack a certified numerical error bound.
-This capability is distinct from Unicode review, incident ordering and arithmetic.
+**Broken/limits:** no check or documented command failure found. Related cases
+violate the original case-level independence assumption; grouped deletion does
+not supply cluster-corrected inference. Groups in the actual policy example are
+post hoc illustrative categories, not registered independent samples. Overlapping
+deletions are sensitivity diagnostics, not replacement tests or permission to
+selectively delete evidence. Pins do not prove honest outcomes, representative
+sampling or preregistration time. Non-rejection is not equivalence. Power estimates
+lack a certified numerical error bound. Actual policy execution is useful but
+its curated related cases support no population inference.
 
-**Narrow for 21 Pepes:** complete fixed binary paired cases, fixed endpoint and
-family, pre-outcome asset seal, complete observations, final receipt and clearly
-labeled deletion sensitivity. Use a worker-selected external workload next.
-Defer arbitrary candidate execution, adaptive stopping, continuous metrics,
-universal rankings and multi-case influence search.
+**Scope and narrowing:** externally useful and distinct from the other three
+goals; it does not serve only this cave. For a 21-Pepe finish, retain fixed binary
+paired cases, one predeclared endpoint/family, sealed assets, complete outcomes,
+replay and bounded declared-group diagnostics. Next use one worker-selected
+external workload. Defer arbitrary execution, adaptive stopping, all metric types,
+universal rankings and automatic grouping or exhaustive subgroup search.
 
 ## Line 2 — reviewable deceptive Unicode evidence
 
 **Tried:** Unicode Lantern, JSON Lantern, JSON Citations, Unicode Replay,
-Unicode Seal, Unicode Window, Unicode Text Window and new Unicode Crosscheck;
-all eight suites, demos, actual records/source files and a three-file comparison.
+Unicode Seal, Unicode Window, Unicode Text Window, Unicode Crosscheck and new
+JSON Crosscheck; all nine suites, capped demos, actual source/record scans and
+actual multi-file decoded-key review.
 
-**Works:** 118 tests. Raw/decoded findings, duplicate decoded keys, original byte
-citations, replay, inert views and bounded omissions still work. Crosscheck finds
-three cross-file occurrences sharing its limited skeleton in its synthetic demo;
-two are shown and one omitted. The actual three-file review read 22,733 bytes,
-2,483 token occurrences and 782 distinct skeletons: zero covered cross-file
-collisions. Invalid late input and outside-workspace paths fail before any partial
-report. File order and earliest differing witnesses are explicit.
+**Works:** 137 tests. Raw and decoded findings, duplicate keys, byte citations,
+replay and bounded inert evidence views remain available. JSON Crosscheck decodes
+escaped names before comparing complete member names across documents. Its
+three-document synthetic fixture has three covered occurrences: two shown,
+one explicitly omitted. Equivalent encodings of identical decoded names alone
+do not collide. Actual gathering evidence review reads **29,366 bytes**, **650
+member names**, **103 distinct limited skeletons**, and finds zero covered
+cross-file key collisions. Late malformed documents fail without partial output.
+Original UTF-8 spans include quotes, with token and decoded digests. Seeded
+independent witness searches exercise ordering, duplicates and citations.
 
-**Broken/limits:** no tool failure found. NFKC plus the Latin/Greek/Cyrillic map
-is not full UTS #39 or a renderer. Comments and strings count, legitimate
-multilingual text can collide, and source escapes are not decoded. Crosscheck
-covers cross-file collisions only; it does not replace raw controls or decoded
-JSON scans. File order can change witnesses/counts. Evidence is unredacted.
-Escaped terminal output is not automatically safe HTML after decoding. Digests
-identify bytes, not trust; some portable commands need sibling engine folders.
-This externally useful review goal does not repeat benchmark or timeline work.
+**Broken/limits:** no check or documented command failure found. NFKC plus a
+limited Latin/Greek/Cyrillic table is not full UTS #39 or a renderer. Findings
+are heuristic, may be harmless multilingual collisions, and do not prove intent.
+JSON Crosscheck compares names across any object depth, not values or schema
+compatibility; within-file risks need other scanners. Counts and witnesses depend
+on file order. Strict UTF-8 JSON excludes BOM/nonfinite/lone-surrogate forms.
+Evidence is unredacted; ASCII terminal escaping is not HTML sanitization. Some
+tools need sibling engine folders: JSON Crosscheck needs all four documented
+folders when copied. Zero findings establishes neither safety nor trust.
 
-**Narrow for 21 Pepes:** finish bounded UTF-8/JSON review, citations, replay,
-explicit omissions and selected multi-file collision triage. Review a real
-worker-selected document set. Defer all formats, all visual deception, automatic
-rewriting, complete security claims and full confusables coverage.
+**Scope and narrowing:** externally useful and different in kind from benchmarks,
+timelines and arithmetic. For 21 Pepes, finish bounded text/JSON review, precise
+citations, replay, explicit omissions and selected multi-file key triage. Use a
+worker-selected document set next. Defer every format, automatic rewriting,
+complete confusables coverage and broad security guarantees.
 
 ## Line 3 — reproducible uncertainty-aware incident timelines
 
-**Tried:** Time Flint demo and supplied mixed logs with asserted ±750 ms;
-Timeline Replay, Order Witness, Clock Margin, Timeline Diff, filtered/unfiltered
-Timeline Window and new Timeline Peaks; all seven suites.
+**Tried:** Time Flint (demo and supplied mixed logs at asserted ±750 ms), Timeline
+Replay, Order Witness, Clock Margin, Timeline Diff, Timeline Window (filtered and
+unfiltered), Timeline Peaks and new Timeline Gaps; all eight suites. The new
+shared tool also replays an observed local CLI journal through the gap engine.
 
-**Works:** 102 tests. Original evidence and omissions replay, intervals remain
-half-open, clock-bound changes stay separate from evidence changes, and literal
-source/message filtering works. Peaks fully verifies the pack before finding
-shared-time windows. Its four-event demo has maximum depth two at two windows,
-while the largest transitive overlap component contains three events. A–B and
-B–C share possible times; A and C do not. Endpoints that merely touch do not
-count as overlap. Window/citation caps retain exact omitted counts. Altered
-pack reports fail verification.
+**Works:** 114 tests. Exact embedded log bytes and omissions replay; half-open
+intervals and clock-model changes remain explicit. Peaks distinguishes common
+instant overlap from transitive overlap components. Gaps fully verifies the pack
+before selecting a query and unions clipped intervals without double-counting.
+Its synthetic six-second example has three seconds covered, three uncovered,
+three one-second gaps and one undated line. Touching intervals leave no gap.
+Output caps preserve all totals and exact omitted counts. Offset-aware query
+endpoints denote instants rather than precision-expanded log timestamps.
+Independent tests compare 500 seeded interval sets to a discrete coverage oracle.
+Altered reports outside the selected window are rejected.
 
-**Broken/limits:** no tool failure found. Shared-time compatibility does not
-establish simultaneity, causality or service concurrency. A transitive component
-may have no common instant. Undated lines cannot be placed and stay explicit.
-Clock bounds are analyst assertions. Packs include unredacted logs; replay is
-internal consistency, not authentic/complete collection. Source/line identities
-cannot track moved events. Filter absence does not establish incident absence.
-This externally useful incident capability repeats none of the other goals.
+**Broken/limits:** no check or documented command failure found. Uncovered time
+means absence of interval coverage, not downtime, inactivity, missing collection,
+authentic evidence or causal order. Widening asserted clock uncertainty can fill
+a gap without adding logs. Precision-as-truncation is a model assumption; clock
+bounds are unmeasured assertions. Undated evidence cannot be placed. Packs retain
+unredacted evidence; replay establishes internal consistency, not completeness.
+Source/line identities cannot track moved events. Shared-time compatibility does
+not prove simultaneity, concurrency or causality.
 
-**Narrow for 21 Pepes:** finish fixed timestamp grammar, portable evidence pack,
-explicit omissions, model comparisons, bounded window queries and exact overlap
-summaries. Exercise a real selected incident. Defer collectors, measured skew,
-causal inference, automatic remediation and claims of true event concurrency.
+**Scope and narrowing:** an external incident tool, not a cave archive or a repeat
+of the other goals. For 21 Pepes, finish the fixed parser, portable replay pack,
+omissions, explicit clock model comparisons, window queries, overlap and coverage
+summaries. Use one worker-selected incident next. Defer collectors, measured skew,
+all log formats, automatic remediation and availability/causality claims.
 
-## Line 4 — exact calculations with dimensions
+## Line 4 — exact arithmetic with dimensions
 
-**Tried:** Unit Flint distances, speed, equality and bounds; Calculation Receipt
-replay and forged results; Interval Flint ranges; Round Flint passing/failed
-rounded claims; new Tolerance Flint boundary pass/fail and invalid dimensions;
-all five suites.
+**Tried:** Unit Flint distance, speed, equality and inclusive bounds; Calculation
+Receipt replay and tampering; Interval Flint enclosures; Round Flint passing and
+failed displays; Tolerance Flint boundary pass/fail and dimension errors; new
+Worksheet Flint failing demo and passing stdin chain; all six suites.
 
-**Works:** 56 tests. Exact distance 1850 m, speed 25/18 m/s and displayed 1.39
-still work. Arithmetic errors differ from valid false claims; replay rejects
-rehashed false results. Interval transfer enclosure remains [3.6,5.5] s.
-Tolerance Flint compares 100.6 cm with 1 m using 1 mm absolute plus 1/200
-relative tolerance: exact error 6 mm equals allowance 6 mm and passes. At
-100.6001 cm, error 6.001 mm fails. Mismatched dimensions fail even at zero,
-with no stdout. Signed references, zero references, exact conversion and
-inclusive margins pass the independent seeded Fraction checks.
+**Works:** 69 tests. Exact conversions, dimension checks even at zero, bounded
+arithmetic, replay, intervals, rounding and supplied tolerances remain operational.
+Worksheet Flint carries computed quantities through explicit prior-step references
+without rounding or evaluating source code. Its demo computes 750 MiB / 12 MiB/s
+= 62.5 s plus 1500 ms = 64 s: equality passes but the one-minute budget fails,
+correctly exiting 1. A stdin worksheet computes 10 km / 2 h = **25/18 m/s**,
+with equality and both bounds passing, exit 0. Failed claims do not overwrite
+computed quantities. Later invalid steps produce no partial stdout. Tests include
+300 independently computed Fraction chains, references, resource limits and CLI
+statuses. Shared Gap Budget uses the actual worksheet engine for its checks.
 
-**Broken/limits:** no tool failure found. Tolerance is a supplied policy, not
-measurement accuracy, confidence or statistical equivalence. Absolute and relative
-terms are added; the reference alone sets the relative scale, so swapping inputs
-can change the result. Rounding is not uncertainty or significant figures;
-interval dependency is lost. Same-parser replay can repeat bugs. `2 m^2` means
-`(2 m)^2`; use `2 * m^2`. Offset temperatures, covariance and currency remain
-unsupported. This arithmetic goal is externally useful and distinct.
+**Broken/limits:** no check or documented command failure found. Exact arithmetic
+checks supplied calculations, not input accuracy, physical model completeness,
+authorship or uncertainty. References must name earlier steps; conversion changes
+display, never stored base quantities. `2 m^2` means `(2 m)^2`; use `2 * m^2`.
+Intervals lose dependency information. Tolerances are supplied policy, not
+statistical equivalence or confidence. Rounding is not measurement uncertainty.
+Same-engine replay can repeat parser bugs. Offset temperatures, probability,
+covariance, currency and exchange rates remain unsupported.
 
-**Narrow for 21 Pepes:** finish bounded exact grammar, dimensions, equality,
-inclusive bounds, receipts, interval enclosures, rounding and explicitly declared
-tolerances. Review a real supplied engineering calculation next. Defer universal
-units, symbolic algebra, probability, significant figures and exchange rates.
+**Scope and narrowing:** externally useful and distinct from the other goals.
+For 21 Pepes, finish bounded exact expressions, dimensions, claims, receipts,
+interval enclosures, rounding, declared tolerances and small acyclic worksheets.
+Use one supplied engineering calculation next. Defer universal unit systems,
+symbolic solvers, significant-figure inference and currency conversion.
 
-## Shared handoff — Effect Band
+## Shared handoff — Gap Budget
 
-New `shared/effect-band/` brings Line 4's exact tolerances to Line 1's single-case
-benchmark sensitivity. Four unchanged ordinary source files ship with source
-paths and SHA-256 provenance. The complete folder works when copied independently
-with Python 3.10+, standard library, no installation or network.
-
-```sh
-python3 -B shared/effect-band/effect_band.py demo
-```
-
-Observed synthetic result: full effect 7/8 falls within reference 4/5 ± 1/10;
-single-deletion range [6/7, 1] does not. Exact minimum/maximum checks establish
-whether **all** single-deletion effects fit the same closed interval. The original
-complete statistical analysis stays untouched. Nine tests pass, including
-independent exhaustive deletion fractions over 80 generated families, signed and
-inclusive boundaries, detail caps, immutability, provenance, copied-folder CLI,
-invalid dimensions, bad pins and workspace containment. One test initially assumed
-all parser errors inherited ValueError; corrected it to also expect the engine's
-UnitError. No source snapshot or upstream behavior was changed.
-
-For actual local code use:
+New `shared/gap-budget/` carries **six unchanged ordinary source snapshots** from
+Lines 3 and 4, with source paths and SHA-256 provenance. The complete folder runs
+independently offline with Python 3.10+ and no dependencies beyond the standard
+library. The seven earlier shared tools and historical snapshots remain intact.
 
 ```sh
-python3 -B gathering/try_effect_band.py
+python3 -B shared/gap-budget/gap_budget.py demo
 ```
 
-This executes and reexecutes Line 1's fixed policies on 18 curated JSON cases,
-then forms a complete paired CSV from the observed results and applies Effect
-Band. Pass counts are 10, 14, 18. At illustrative reference 1/4 ± 1/10, the first
-candidate's 2/9 effect and [3/17,4/17] deletion range pass; the second's 4/9 and
-[7/17,8/17] fail. The CSV, its hash and results are retained in
-`measured-effect-band.json`. This is a post hoc demonstration band, not registered
-acceptance or population inference. The synthetic transcript is
-`effect-band-demo.json`.
+**Deliberate exit 1:** the synthetic six-second window has three uncovered seconds,
+which exceed `2500 ms`; its longest gap of one second passes an inclusive `1 s`
+budget. The exact uncovered fraction is 1/2; covered plus uncovered equals the
+window. The report includes the generated worksheet request and exact result.
+One shown gap and two omitted details cannot change these complete totals.
 
-The review CLI requires a retained expected CSV digest and validates the entire
-CSV. A completed review exits zero even for a failed band; invalid input exits two
-with no partial stdout. It never chooses cases to delete. Descriptive closeness
-is not statistical equivalence. The six earlier handoffs and historical engine
-snapshots remain intact; no new upstream or shared-tool repair was needed.
+Ten integration tests pass, including 100 seeded microsecond examples checked
+against independent counts and Fractions, caps, inclusive boundaries, invalid
+dimensions, full/empty coverage, immutability, provenance, copied-folder CLI,
+workspace containment, bad pins, out-of-window tampering and no partial errors.
+Successful checks exit 0, valid failed budgets exit 1, invalid inputs exit 2.
+The real-input CLI requires an independently retained digest of the exact pack.
+It never opens original log paths embedded in a pack or echoes their messages.
+
+```sh
+python3 -B gathering/try_gap_budget.py
+```
+
+An actual local observation executes the four latest line demos and timestamps
+each start/end, then replays the resulting journal. The retained run in
+`observed-gap-budget.json` has **251,839 µs** window, **8 µs** timestamp coverage,
+**251,831 µs** uncovered time and **69,701 µs** longest gap. Both illustrative
+one-second budgets pass. These sparse process-observation timestamps are real;
+the commands' demo payloads remain synthetic. Timestamp coverage is not process
+runtime, measured clock accuracy, service availability or an external incident.
+The budgets are post hoc demonstration choices. Reruns naturally change timings.
+`gap-budget-demo.json` retains the deterministic synthetic example.
 
 ## Coins
 
-`COINS.md`: **none**. No capability needs currency, price, payment, balance or a
-pool. A new coin or hook enables no missing operation. No launch or deployment
-order or check POST is justified. Real ZTO remains first and IMD second if future
-work actually needs currency. Nothing was signed, sent, posted, paid or deployed.
+`COINS.md`: **none**. No line or shared operation needs currency, prices, balances,
+payments or a pool. Neither a new coin nor a hook enables a missing capability.
+No launch/deployment request or check POST is justified. Real ZTO remains first
+and IMD second if a future capability actually needs currency. Nothing was signed,
+sent, posted, paid or deployed.
 
-## Wall and records
+## Wall, records and gallery
 
-**The Measured Gap:** two worn chalk curves bracket one charcoal pebble below
-Pepe's right hand. Built-in imagegen supplied the motif. Only its pigment was
-composited onto the exact original wall: **1,361 changed pixels**, all within
-`[912,784,1008,853)`. All other decoded pixels are identical to gathering eight.
-Rock, cracks, lighting, framing and ancestral marks stay intact. Both inherited
-hands have four fingers and a thumb; no new hands or stencils. No letters,
-numbers, captions, logos or prohibited symbols observed. Full PNG and 512px
-preview were visually inspected. **Unmet visual requirements: none observed.**
-The motif is less distinct at preview size; no independent artistic approval.
+**The Counted Silence:** broken chalk trails cradle an ochre pebble where evidence
+leaves a gap. Built-in imagegen generated the pigment. The donor placed it on
+lower-right rock rather than the requested coordinates; visual review accepted
+that placement because it avoids all ancestral marks. `add_mark10.js` transferred
+only chalk/ochre pigment onto the exact previous wall. **1,160 decoded pixels**
+changed, all within **[928,1128,1023,1194)**. Every other pixel matches Gathering 09.
+Rock, cracks, colour, torchlight, framing and prior pigment remain unchanged.
 
-Required named output: `artifacts/gathering/wall-v9.png`, **1254 × 1254 RGB8 PNG**,
-untracked for separate upload. `wall.png` is its relative alias. Preview:
-`dist/gathering/09.jpg`, **512 × 512 baseline JPEG, 97,774 bytes**. Record `09.json`
-and rewritten `one.json` use the actual PNG SHA-256; One retains number 736.
-This is a later gathering; placeholder slot 09 is replaced, and earlier records
-and future placeholders stay unchanged. `dist/goals.json` copies all exact goals.
-The self-contained gallery includes **134 numbered records: 42 painted, 92 future**,
-by wall, newest painted first, then future slots newest first.
+Both inherited hands were counted: four fingers and one thumb each, **five digits**.
+No new hands/stencils were added. No letters, numbers, captions, signatures,
+logos, watermarks, borders or prohibited symbols observed. Full PNG and preview
+were visually inspected. **Unmet visual requirements: none observed.** The small
+new motif is subtle in the preview; no independent visual approval is claimed.
 
-Structural checks verify image bytes/dimensions, record shape/hash, goals, local
-links/order, file sizes, unchanged line bytes and historical shared snapshots.
-Results are in `validation.json`, `gallery-check.json`, `wall-review.json` and
-`mark-process.json`. The gallery uses local previews and inline styles, no scripts,
-fonts or external stylesheets. Full image links require the artifact service.
-No browser rendering or independent behavioral certification is claimed.
+Required named upload: **artifacts/gathering/wall-v10.png**, **1254 × 1254 RGB8 PNG**,
+left untracked for separate delivery. `wall.png` points to it with a relative
+alias. Preview: **dist/gathering/10.jpg**, **512 × 512 baseline JPEG, 97,979 bytes**.
+`10.json` and rewritten `one.json` use the actual full PNG SHA-256; One retains
+number 736. This is a later gathering: slot 10 is replaced, all earlier painted
+records and remaining placeholders stay intact. No new placeholder set is needed.
+
+`dist/goals.json` copies the exact four GOAL.md contents. The self-contained
+`dist/index.html` includes **138 numbered records: 47 painted and 91 future**,
+grouped by wall, newest painted first and then newest future slot first. Local
+JPEG previews, inline CSS and no scripts/fonts/external stylesheets support
+offline viewing. Full PNG links need the artifact service. No browser rendering
+or independent accessibility certification was performed.
+
+Structural checks in `validation.json` and `gallery-check.json` cover image bytes,
+dimensions, record hashes and schema, goals, every gallery card, local links,
+ordering, file sizes, unchanged line bytes and snapshot provenance. Visual and
+pixel-preservation evidence is in `wall-review.json` and `mark-process.json`.
+The prompt and observed placement are in `image-prompt.txt`.

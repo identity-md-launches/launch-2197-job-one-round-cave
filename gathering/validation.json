@@ -1,60 +1,60 @@
 {
   "structural_checks": "passed",
-  "unchanged_tracked_ancestor_files": 378,
-  "future_records": 92,
-  "painted_records": 42,
-  "numbered_records": 134,
+  "unchanged_tracked_ancestor_files": 422,
+  "future_records": 91,
+  "painted_records": 47,
+  "numbered_records": 138,
   "goals": 4,
   "wall": {
-    "path": "artifacts/gathering/wall-v9.png",
+    "path": "artifacts/gathering/wall-v10.png",
     "alias": "artifacts/gathering/wall.png",
     "format": "PNG RGB8",
     "width": 1254,
     "height": 1254,
-    "bytes": 4005400,
-    "sha256": "32a8fef5f5ec256ed76c01ff28e1f914f50d011b0a5417a78a1d9ed33c5a34b0"
+    "bytes": 4006711,
+    "sha256": "d1b20a4154c317481a8f3b4094af0198e11d18f7d5162c32610db160fb80415f"
   },
   "preview": {
-    "path": "dist/gathering/09.jpg",
+    "path": "dist/gathering/10.jpg",
     "format": "JPEG",
     "width": 512,
     "height": 512,
-    "bytes": 97774
+    "bytes": 97979
   },
   "source_packaging": {
-    "current_wall_alias": "wall-v9.png",
-    "alias_entry_bytes": 11,
-    "duplicate_png_bytes_removed": 4005389,
+    "current_wall_alias": "wall-v10.png",
+    "alias_entry_bytes": 12,
+    "duplicate_png_bytes_removed": 4006699,
     "declared_output_tracked": false
   },
   "pixel_preservation": {
-    "changed_pixels": 1361,
+    "changed_pixels": 1160,
     "allowed_box": [
-      912,
-      784,
-      1008,
-      853
+      928,
+      1128,
+      1023,
+      1194
     ],
     "all_pixels_outside_added_motif_unchanged": true
   },
   "visual_review": [
-    "1254 x 1254 square RGB8 PNG.",
-    "Ancestral rock, cracks, light, framing and pigments retained pixel-for-pixel outside 1361 added pigment pixels.",
-    "Pepe remains the central heavy-lidded, wide-mouthed frog.",
-    "Both inherited hands counted: four fingers and one thumb each; no new hands or stencils.",
-    "New chalk curves bracket one charcoal pebble on bare rock below the right hand.",
-    "No letters, numbers, captions, signatures, logos, borders or prohibited symbols observed."
+    "Recognizable central Pepe with broad mouth and heavy-lidded eyes remains unchanged.",
+    "Both inherited hands retain four fingers and one thumb, five digits each. No new hands or stencils.",
+    "Small worn chalk bars with an ochre pebble added on bare lower-right rock.",
+    "Warm rock, cracks, torchlight and framing unchanged outside the added pigment.",
+    "No letters, numbers, captions, signatures, logos, watermarks, borders or prohibited symbols observed."
   ],
   "visual_limits": [
-    "Small motif is less distinct in the preview.",
-    "Local visual review only; no independent artistic approval or browser certification."
+    "Small new motif is subtle at preview size.",
+    "Generated donor did not follow requested placement; accepted its lower-right placement after inspection and pigment-only compositing.",
+    "No independent visual approval or automated semantic image certification."
   ],
   "unmet_visual_requirements": [],
   "tests": {
-    "line_passed": 383,
-    "shared_passed": 95,
+    "line_passed": 435,
+    "shared_passed": 105,
     "additional_line_passed": 12,
     "expected_failures": 0
   },
-  "cli_examples": 57
+  "cli_examples": 66
 }

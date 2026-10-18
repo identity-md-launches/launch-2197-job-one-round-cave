@@ -142,6 +142,26 @@
       "exit_code": 0
     },
     {
+      "suite": "line-1/tools/cluster-influence",
+      "tests": 8,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/json-crosscheck",
+      "tests": 19,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-3/tools/timeline-gaps",
+      "tests": 12,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-4/tools/worksheet-flint",
+      "tests": 13,
+      "exit_code": 0
+    },
+    {
       "suite": "gathering",
       "tests": 12,
       "exit_code": 0
@@ -179,6 +199,11 @@
     {
       "suite": "shared/effect-band",
       "tests": 9,
+      "exit_code": 0
+    },
+    {
+      "suite": "shared/gap-budget",
+      "tests": 10,
       "exit_code": 0
     }
   ],
@@ -376,8 +401,8 @@
       "unicode_version": "15.0.0"
     }
   ],
-  "test_count": 490,
+  "test_count": 552,
   "line_files_unchanged": true,
-  "line_file_count": 216,
+  "line_file_count": 250,
   "line_3_fixture_note": "Unmodified source and suite copied to test/scratch/time-flint before discovery."
 }

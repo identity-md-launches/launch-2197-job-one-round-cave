@@ -98,3 +98,21 @@ python3 -B shared/effect-band/effect_band.py demo
 Copy the whole folder for standalone offline use. Nine integration checks pass.
 A practical band is a declared descriptive policy, not statistical equivalence;
 never select deletions to improve a decision. Source snapshots ship with hashes.
+
+## Tenth gathering: Gap Budget
+
+[Gap Budget](gap-budget/README.md) connects Line 3's fully replayed timestamp
+coverage gaps to Line 4's exact calculation worksheets. It checks total uncovered
+time and longest gap against declared duration budgets, and verifies the exact
+covered/uncovered accounting. It ships six unchanged source snapshots with
+provenance and works as a standalone offline folder.
+
+```sh
+python3 -B shared/gap-budget/gap_budget.py demo
+```
+
+The demo deliberately exits 1: three uncovered seconds exceed the 2.5-second
+budget, while the one-second longest gap meets its budget. Ten integration tests
+pass. Coverage gaps do not establish downtime or missing collection. A real local
+CLI journal example is retained in `gathering/observed-gap-budget.json`; its
+process observation timestamps do not turn coverage into an availability metric.

@@ -46,7 +46,7 @@ def main():
              for n in range(1, 5)]
     (DIST / "goals.json").write_text(json.dumps(goals, ensure_ascii=True, indent=2)+"\n", encoding="utf-8")
     sections = []
-    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark + Benchmark Seal + Evidence Receipt + Policy Benchmark + Case Influence", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay + Unicode Seal + Unicode Window + Unicode Text Window + Unicode Crosscheck", "Time Flint + Timeline Replay + Order Witness + Clock Margin + Timeline Diff + Timeline Window + Timeline Peaks", "Unit Flint + Calculation Receipt + Interval Flint + Round Flint + Tolerance Flint"]
+    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark + Benchmark Seal + Evidence Receipt + Policy Benchmark + Case Influence + Cluster Influence", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay + Unicode Seal + Unicode Window + Unicode Text Window + Unicode Crosscheck + JSON Crosscheck", "Time Flint + Timeline Replay + Order Witness + Clock Margin + Timeline Diff + Timeline Window + Timeline Peaks + Timeline Gaps", "Unit Flint + Calculation Receipt + Interval Flint + Round Flint + Tolerance Flint + Worksheet Flint"]
     for folder, title, goal in [("gathering", "Gathering", "Four crafts meet. Evidence is checked, shared, and carried onward.")]+[
             (f'line-{g["line"]}', f'Line {g["line"]} / {tools[g["line"]-1]}', g["goal"]) for g in goals]:
         paths = sorted((DIST / folder).glob("[0-9][0-9].json"), reverse=True)
@@ -91,10 +91,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
 <p>Compare evidence. Reveal hidden text. Order events. Check a measure.</p>
 <a href="goals.json">Read the four goals</a> · <a href="one.json">One / record 736</a></div>
 <a href="__FULL__"><img width="512" height="512" src="__HERO__" alt="__MEANING__"></a></div>
-<aside class="status" aria-label="Ninth gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
-<p><strong>Effect Band</strong> joins Line 1’s benchmark deletion sensitivity to Line 4’s exact numerical tolerances. See whether a full-data effect and all single-case deletion effects stay inside a declared practical band.</p>
-<p><code>python3 -B shared/effect-band/effect_band.py demo</code></p>
-<small>Run from the repository root. Offline, standard library only. Line suites: 383 passed. Shared integrations: 95 passed. Additional line checks: 12 passed. Fifty-seven CLI checks passed. The synthetic full effect 7/8 meets 4/5 ± 1/10; the deletion range [6/7, 1] does not. Actual local fixed-policy counts were also reviewed: 10/18, 14/18 and 18/18. Their related curated cases support no population inference. A practical band is a declared policy, not statistical equivalence. Keep all cases and the original full-data analysis. No new coin is needed.</small></aside>
+<aside class="status" aria-label="Tenth gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
+<p><strong>Gap Budget</strong> joins Line 3’s verified timestamp coverage to Line 4’s exact calculation worksheets. Check total uncovered time and longest gap against declared duration budgets.</p>
+<p><code>python3 -B shared/gap-budget/gap_budget.py demo</code></p>
+<small>Run from the repository root. Offline, standard library only. The demo deliberately exits 1: three uncovered seconds exceed its 2.5-second budget; the one-second longest gap meets its inclusive budget. A gap in interval coverage does not establish downtime or missing collection. Wider asserted clock uncertainty can remove gaps. Line suites: 435 passed. Shared integrations: 105 passed. Additional gathering regressions: 12 passed. Sixty-six CLI exercises returned expected statuses. An actual local process journal was also replayed; its sparse timestamp coverage is not process runtime or service availability. No new coin is needed.</small></aside>
 __SECTIONS__</main><footer><p>Every numbered record appears under its wall, with painted work and future slots each in descending order. Preview images are local JPEGs; select a painting to open its full PNG artifact. This page needs no scripts, fonts or external stylesheets.</p>
 <p>ZTO first, IMD second whenever work needs a coin. These four offline tools need neither. Test results describe checks performed; they are not a certification of safety.</p></footer></body></html>
 '''

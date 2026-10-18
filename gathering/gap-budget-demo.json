@@ -1,0 +1,252 @@
+{
+  "schema": "gap-budget/1",
+  "coverage": {
+    "format": "timeline-gaps/1",
+    "replay": {
+      "verified": true,
+      "sources": 1,
+      "events": 3,
+      "omitted": 1,
+      "clock_uncertainty_ms": 0
+    },
+    "window": {
+      "start_utc_inclusive": "2026-10-18T10:00:00Z",
+      "end_utc_exclusive": "2026-10-18T10:00:06Z",
+      "duration_us": 6000000
+    },
+    "counts": {
+      "timestamped_events": 3,
+      "intersecting_events": 3,
+      "undated_lines": 1,
+      "covered_components": 2,
+      "gaps_total": 3,
+      "gaps_shown": 1,
+      "gaps_not_shown": 2
+    },
+    "durations_us": {
+      "window": 6000000,
+      "covered": 3000000,
+      "uncovered": 3000000,
+      "longest_gap": 1000000
+    },
+    "gaps": [
+      {
+        "start_utc_inclusive": "2026-10-18T10:00:00Z",
+        "end_utc_exclusive": "2026-10-18T10:00:01Z",
+        "duration_us": 1000000
+      }
+    ],
+    "engine_sha256": "caa513722a9767e908dc4a5e49711e623e0a34c8b18753c3d01cda8167988e38",
+    "options": {
+      "ignore_unmatched": true,
+      "clock_uncertainty_ms": 0
+    },
+    "interpretation": "Gaps are the complement of the union of dated-event uncertainty intervals within the requested half-open window. They are gaps in this evidence model, not proof of inactivity, downtime, missing collection, or causality. Timestamp precision is modeled as truncation; clock bounds are analyst assertions. Undated lines cannot be placed. Replay proves internal consistency, not authenticity or completeness. Messages and source bytes are not echoed."
+  },
+  "worksheet_request": {
+    "schema": "worksheet-flint/1",
+    "steps": [
+      {
+        "name": "window",
+        "expression": "(6000000 / 1000000) * s",
+        "to": "s"
+      },
+      {
+        "name": "covered",
+        "expression": "(3000000 / 1000000) * s",
+        "to": "s"
+      },
+      {
+        "name": "uncovered",
+        "expression": "(3000000 / 1000000) * s",
+        "to": "s",
+        "at_most": "2500 ms"
+      },
+      {
+        "name": "longest_gap",
+        "expression": "(1000000 / 1000000) * s",
+        "to": "s",
+        "at_most": "1 s"
+      },
+      {
+        "name": "accounted",
+        "expression": "$covered + $uncovered",
+        "expect": "$window",
+        "to": "s"
+      },
+      {
+        "name": "uncovered_fraction",
+        "expression": "$uncovered / $window"
+      }
+    ]
+  },
+  "worksheet_result": {
+    "schema": "worksheet-flint/1",
+    "steps": [
+      {
+        "request": {
+          "name": "window",
+          "expression": "(6000000 / 1000000) * s",
+          "to": "s"
+        },
+        "dependencies": [],
+        "base_value": "6",
+        "base_unit": "s",
+        "dimensions": {
+          "length": 0,
+          "mass": 0,
+          "time": 1,
+          "data": 0
+        },
+        "value": "6",
+        "unit": "s",
+        "checks": {},
+        "passes": true
+      },
+      {
+        "request": {
+          "name": "covered",
+          "expression": "(3000000 / 1000000) * s",
+          "to": "s"
+        },
+        "dependencies": [],
+        "base_value": "3",
+        "base_unit": "s",
+        "dimensions": {
+          "length": 0,
+          "mass": 0,
+          "time": 1,
+          "data": 0
+        },
+        "value": "3",
+        "unit": "s",
+        "checks": {},
+        "passes": true
+      },
+      {
+        "request": {
+          "name": "uncovered",
+          "expression": "(3000000 / 1000000) * s",
+          "to": "s",
+          "at_most": "2500 ms"
+        },
+        "dependencies": [],
+        "base_value": "3",
+        "base_unit": "s",
+        "dimensions": {
+          "length": 0,
+          "mass": 0,
+          "time": 1,
+          "data": 0
+        },
+        "value": "3",
+        "unit": "s",
+        "checks": {
+          "at_most": {
+            "base_value": "5/2",
+            "passes": false
+          }
+        },
+        "passes": false
+      },
+      {
+        "request": {
+          "name": "longest_gap",
+          "expression": "(1000000 / 1000000) * s",
+          "to": "s",
+          "at_most": "1 s"
+        },
+        "dependencies": [],
+        "base_value": "1",
+        "base_unit": "s",
+        "dimensions": {
+          "length": 0,
+          "mass": 0,
+          "time": 1,
+          "data": 0
+        },
+        "value": "1",
+        "unit": "s",
+        "checks": {
+          "at_most": {
+            "base_value": "1",
+            "passes": true
+          }
+        },
+        "passes": true
+      },
+      {
+        "request": {
+          "name": "accounted",
+          "expression": "$covered + $uncovered",
+          "expect": "$window",
+          "to": "s"
+        },
+        "dependencies": [
+          "covered",
+          "uncovered",
+          "window"
+        ],
+        "base_value": "6",
+        "base_unit": "s",
+        "dimensions": {
+          "length": 0,
+          "mass": 0,
+          "time": 1,
+          "data": 0
+        },
+        "value": "6",
+        "unit": "s",
+        "checks": {
+          "expect": {
+            "base_value": "6",
+            "passes": true
+          }
+        },
+        "passes": true
+      },
+      {
+        "request": {
+          "name": "uncovered_fraction",
+          "expression": "$uncovered / $window"
+        },
+        "dependencies": [
+          "uncovered",
+          "window"
+        ],
+        "base_value": "1/2",
+        "base_unit": "1",
+        "dimensions": {
+          "length": 0,
+          "mass": 0,
+          "time": 0,
+          "data": 0
+        },
+        "value": "0.5",
+        "unit": "1",
+        "checks": {},
+        "passes": true
+      }
+    ],
+    "passes": false
+  },
+  "passes": false,
+  "interpretation": [
+    "Budgets are user-supplied policy on timestamp interval coverage only.",
+    "Passing is not evidence of availability, complete logs, honest timestamps or clock accuracy.",
+    "Gaps are not measured downtime; wider asserted uncertainty may remove them.",
+    "Entire pack is replayed before selecting the window. Undated lines remain explicit.",
+    "All totals precede the displayed-gap cap. Fraction uses the complete window.",
+    "A trusted pack digest identifies bytes; replay establishes consistency, not authorship."
+  ],
+  "example": "synthetic demonstration, not an observed incident or availability claim",
+  "pack_sha256": "a337f6a87b2569df9819f2516aa615fb7ee23c8acdd20c609db40d3ea93ad3ba",
+  "source_sha256": {
+    "engines/timeline/replay.py": "d77a8a28268ce860aac890926720d4cd278535ff89b7930e2f6fad45acf2f0c8",
+    "engines/timeline/timeline_gaps.py": "492ac3aa6a572a972f85f66895f624b8e3fcb0cf4c47b7a990ce4ba3a70b2481",
+    "engines/timeline/vendor/__init__.py": "7b170ee8a9c7182e7232fb81e1ac60be5a08619dce449c9500e2b3b740248ea2",
+    "engines/timeline/vendor/time_flint.py": "caa513722a9767e908dc4a5e49711e623e0a34c8b18753c3d01cda8167988e38",
+    "engines/worksheet/engine.py": "c683e558cdbdf6cf73d4b32572b6fa498b80e7816483b882bf2d51adfff3062e",
+    "engines/worksheet/worksheet_flint.py": "09593e0004a11aced0e7efd0d55d4ff0c44de0856bc241d460af6e500d17bb65"
+  }
+}

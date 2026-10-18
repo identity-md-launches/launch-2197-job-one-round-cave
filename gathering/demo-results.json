@@ -2,6 +2,262 @@
   "checks_passed": true,
   "examples": [
     {
+      "name": "shared gap budget declared failure",
+      "command": [
+        "python3",
+        "-B",
+        "shared/gap-budget/gap_budget.py",
+        "demo"
+      ],
+      "expected_exit": 1,
+      "exit_code": 1,
+      "passed": true,
+      "observed": {
+        "passes": false
+      }
+    },
+    {
+      "name": "observed CLI journal coverage",
+      "command": [
+        "python3",
+        "-B",
+        "gathering/try_gap_budget.py"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "worksheet passing exact chain",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/worksheet-flint/worksheet_flint.py",
+        "check"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "stdin": {
+        "schema": "worksheet-flint/1",
+        "steps": [
+          {
+            "name": "distance",
+            "expression": "10 km"
+          },
+          {
+            "name": "duration",
+            "expression": "2 h"
+          },
+          {
+            "name": "speed",
+            "expression": "$distance / $duration",
+            "to": "m/s",
+            "expect": "5 km/h",
+            "at_least": "1 m/s",
+            "at_most": "2 m/s"
+          }
+        ]
+      },
+      "observed": {
+        "passes": true
+      }
+    },
+    {
+      "name": "cluster deletion influence",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/cluster-influence/cluster_influence.py",
+        "--demo",
+        "--max-details",
+        "1"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "clusters_checked": 3,
+        "clusters_changing_decision_or_direction": 2,
+        "details_omitted": 2,
+        "complete_diagnostics_sha256": "607039c8fdf96abe53d1fd799de86b61051878d0b7c21736b22a596affc5989f",
+        "candidates": [
+          {
+            "name": "first",
+            "decision_changes": 2,
+            "direction_changes": 0,
+            "minimum_effect": {
+              "numerator": "5",
+              "denominator": "7"
+            },
+            "maximum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            }
+          },
+          {
+            "name": "second",
+            "decision_changes": 2,
+            "direction_changes": 0,
+            "minimum_effect": {
+              "numerator": "5",
+              "denominator": "7"
+            },
+            "maximum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "executed policy cluster review",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/cluster-influence/try_policies.py"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "clusters_checked": 5,
+        "clusters_changing_decision_or_direction": 2,
+        "details_omitted": 0,
+        "complete_diagnostics_sha256": "6ad2ae805f6392985dcec2bcb26b0d937ddf59e4e7d771020f7638bf85a30607",
+        "candidates": [
+          {
+            "decision_changes": 0,
+            "direction_changes": 1,
+            "maximum_effect": {
+              "denominator": "3",
+              "numerator": "1"
+            },
+            "minimum_effect": {
+              "denominator": "1",
+              "numerator": "0"
+            },
+            "name": "reject-constants-v1"
+          },
+          {
+            "decision_changes": 2,
+            "direction_changes": 0,
+            "maximum_effect": {
+              "denominator": "3",
+              "numerator": "2"
+            },
+            "minimum_effect": {
+              "denominator": "7",
+              "numerator": "2"
+            },
+            "name": "unique-finite-v1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "decoded JSON crosscheck",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/json-crosscheck/json_crosscheck.py",
+        "--demo",
+        "--max-findings",
+        "2"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "member_names": 7,
+        "omitted_findings": 1,
+        "total_bytes": 100,
+        "distinct_skeletons": 3,
+        "retained_findings": 2,
+        "truncated": true,
+        "finding_count": 3,
+        "assessment": "review-required"
+      }
+    },
+    {
+      "name": "actual decoded JSON keys",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/json-crosscheck/json_crosscheck.py",
+        "--files",
+        "gathering/measured-effect-band.json",
+        "gathering/benchmark-display-demo.json",
+        "gathering/effect-band-demo.json"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "member_names": 650,
+        "omitted_findings": 0,
+        "total_bytes": 29366,
+        "distinct_skeletons": 103,
+        "retained_findings": 0,
+        "truncated": false,
+        "finding_count": 0,
+        "assessment": "no-covered-key-collisions-found"
+      }
+    },
+    {
+      "name": "timeline coverage gaps",
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/timeline-gaps/timeline_gaps.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "durations_us": {
+          "covered": 3000000,
+          "longest_gap": 1000000,
+          "uncovered": 3000000,
+          "window": 6000000
+        },
+        "replay": {
+          "clock_uncertainty_ms": 0,
+          "events": 3,
+          "omitted": 1,
+          "sources": 1,
+          "verified": true
+        },
+        "counts": {
+          "covered_components": 2,
+          "gaps_not_shown": 0,
+          "gaps_shown": 3,
+          "gaps_total": 3,
+          "intersecting_events": 3,
+          "timestamped_events": 3,
+          "undated_lines": 1
+        }
+      }
+    },
+    {
+      "name": "worksheet declared budget failure",
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/worksheet-flint/worksheet_flint.py",
+        "demo"
+      ],
+      "expected_exit": 1,
+      "exit_code": 1,
+      "passed": true,
+      "observed": {
+        "passes": false
+      }
+    },
+    {
       "name": "measured effect band",
       "command": [
         "python3",

@@ -1,17 +1,17 @@
 {
-  "wall_sha256": "32a8fef5f5ec256ed76c01ff28e1f914f50d011b0a5417a78a1d9ed33c5a34b0",
-  "review_step": "Visually inspected full edited PNG after preserving original pixels; inspect final 512px JPEG as well.",
+  "wall_sha256": "d1b20a4154c317481a8f3b4094af0198e11d18f7d5162c32610db160fb80415f",
+  "method": "Direct visual inspection of full PNG and 512px JPEG, plus exact decoded-pixel comparison against Gathering 09.",
   "observations": [
-    "1254 x 1254 square RGB8 PNG.",
-    "Ancestral rock, cracks, light, framing and pigments retained pixel-for-pixel outside 1361 added pigment pixels.",
-    "Pepe remains the central heavy-lidded, wide-mouthed frog.",
-    "Both inherited hands counted: four fingers and one thumb each; no new hands or stencils.",
-    "New chalk curves bracket one charcoal pebble on bare rock below the right hand.",
-    "No letters, numbers, captions, signatures, logos, borders or prohibited symbols observed."
+    "Recognizable central Pepe with broad mouth and heavy-lidded eyes remains unchanged.",
+    "Both inherited hands retain four fingers and one thumb, five digits each. No new hands or stencils.",
+    "Small worn chalk bars with an ochre pebble added on bare lower-right rock.",
+    "Warm rock, cracks, torchlight and framing unchanged outside the added pigment.",
+    "No letters, numbers, captions, signatures, logos, watermarks, borders or prohibited symbols observed."
   ],
   "limits": [
-    "Small motif is less distinct in the preview.",
-    "Local visual review only; no independent artistic approval or browser certification."
+    "Small new motif is subtle at preview size.",
+    "Generated donor did not follow requested placement; accepted its lower-right placement after inspection and pigment-only compositing.",
+    "No independent visual approval or automated semantic image certification."
   ],
   "unmet_visual_requirements": []
 }
